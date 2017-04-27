@@ -1,0 +1,63 @@
+@import url(mixin.less);
+@import url(header.less);
+@import url(main.less);
+@import url(footer.less);
+
+
+
+@font-face {
+    font-family: 'OpenSans';
+    src: url(../fonts/OpenSans-ExtraBold.ttf);
+}
+
+@font-face {
+    font-family: 'OpenSans-BoldItalic';
+    src: url(../fonts/OpenSans-Semibold.ttf);
+}
+@font-face {
+    font-family: 'OpenSans-LightItalic';
+    src: url(../fonts/OpenSans-Regular.ttf);
+}
+@font-face {
+    font-family: BoldScript;
+    src: url(../fonts/OpenSans-ExtraBold.ttf);
+}
+
+* {
+	box-sizing: border-box;
+}
+.container {
+	width: 100%;
+	max-width: 1200px;
+	margin: auto;
+}
+a {
+	text-decoration: none;
+	transition: 0.5s;
+}
+// кнопка вверх
+.button-up {
+	position: fixed;
+	display: none;
+	cursor: pointer;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	border: 1px solid @colorBlack;
+	background: url(../img/-.png) center no-repeat;
+	background-color:  rgba(166, 191, 210, 11.25);
+	transform: rotate(-180deg);
+	bottom: 20px;
+	right: 1%;
+    &:hover {
+    	border: 1px solid @colorRed;
+    	background-color: @colorRed;
+    }
+}
+@media screen and (max-width: 414px) {
+	.button-up {
+		width: 30px;
+		height: 30px;
+	}
+}
+

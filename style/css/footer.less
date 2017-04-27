@@ -1,0 +1,155 @@
+.page-footer__line {
+	background-color: @colorGrey;
+	border-bottom: 1px solid @colorBlack;
+	border-top: 1px solid @colorBlack;
+}
+.page-footer__title {
+	font-family: 'OpenSans-BoldItalic';
+	font-size: 40px;
+	text-transform: uppercase;
+	font-weight: bold;
+	padding: 10px 0;
+	margin: auto; 
+    text-align: center;
+}
+.page-footer__wrapper {
+	width: 100%;
+	.fixy ();
+}
+.page-footer__mail {
+	margin: 50px 0;
+	width: 40%;
+	padding: 40px 0;
+	background-color: @colorGrey;
+	border: 1px solid @colorBlack;
+	-webkit-box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.75);
+}
+form {
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+	text-align: center;
+	font-size: 18px;
+	font-family: 'OpenSans-LightItalic';
+	p {
+		&:not(:last-child){
+			margin-bottom: 20px;
+		}
+	}
+}
+.input,
+.mesege,
+.btn {
+	a {
+		color: @colorBlack;
+		text-decoration: none;
+	}
+	border: 1px solid cfcfcf;
+    padding: 10px;
+    background-color: @colorWhite;
+}
+.input,
+.mesege {
+	width: 400px;
+	max-width: 400px;
+}
+.btn {
+	cursor: pointer;
+	text-transform: uppercase;
+	color: @colorBlack;	
+	font-family: 'OpenSans-BoldItalic';
+	font-size: 18px;
+	text-decoration: none;
+	border-radius: 10px;
+	&:hover {
+		background-color: @colorRed;
+		transition: 0.5s;
+		color: @colorWhite;
+	}
+}
+.page-footer__contact {
+	display: flex;
+    justify-content: center;
+    flex-direction: column;
+	margin: 50px 0;
+	width: 60%;
+	padding: 40px 0;
+	a{
+		font-size: 40px;
+		color: @colorBlack;
+
+	}
+	p {
+		text-align: center;
+		margin: auto;
+		font-family: 'OpenSans-BoldItalic';
+		font-size: 40px;
+		text-transform: uppercase;
+
+	}
+}
+.page-footer__copy {
+	display: flex;
+    padding: 10px 0;
+    justify-content: center;
+	color: @colorBlack;
+}
+
+@media screen and (max-width: 1024px) {
+	.page-footer__title {
+		font-size: 30px;
+	}
+	.page-footer__wrapper{
+		flex-direction: column-reverse;
+	}
+	.page-footer__mail {
+		width: 100%;
+		margin: 20px 0;
+        padding: 20px 0;
+	}
+	.page-footer__contact {
+		width: 100%;
+		a,
+		p {
+			font-size: 30px;
+		}
+	}
+	.btn {
+		font-size: 16px;
+	}
+}
+@media screen and (max-width: 414px) {
+	.page-footer__title {
+		font-size: 20px;
+	}
+	.page-footer__contact {
+		a,
+		p {
+			font-size: 20px;
+		}
+	}
+	.input,
+	.mesege {
+		width: 300px;
+		max-width: 300px;
+	}
+	.btn {
+		font-size: 14px;
+	}
+}
+@media screen and (max-width: 320px) {
+	.input,
+	.mesege {
+		width: 250px;
+		max-width: 250px;
+	}
+	.btn {
+		font-size: 12px;
+	}
+}
+
+
+
+

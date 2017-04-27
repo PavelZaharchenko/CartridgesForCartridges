@@ -1,0 +1,130 @@
+
+.page-main__infomation{
+    text-align: center;
+    margin: auto;
+    padding: 100px 0;
+}
+.infomation-title {
+	font-family: 'OpenSans-BoldItalic';
+	font-size: 40px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.infomation-description {
+	padding-top: 50px;
+	font-size: 25px;
+	font-family: 'OpenSans-LightItalic';
+	width: 700px;
+	margin: auto;
+}
+.page-main__product-description {
+	display: flex;
+	flex-direction: column;
+}
+.product-description {
+    padding: 100px 0;
+    font-size: 25px;
+    font-family: 'OpenSans-LightItalic';
+    width: 700px;
+    margin: auto;
+    text-align: center;
+}
+// info-column
+.our-advantages__list {
+	.fixy ();
+	flex-wrap: wrap;
+	padding: 100px 0;
+}
+.our-advantages__title {
+	font-family: 'OpenSans-BoldItalic';
+	font-size: 40px;
+	text-transform: uppercase;
+	font-weight: bold;
+	margin: auto;
+	text-align: center;
+	// width: 700px;
+}
+.our-advantages__list-item {
+	width: 30%;
+	text-align: center;
+	padding: 20px;
+}
+.item-title {
+	font-size: 20px;
+	font-family: 'OpenSans-BoldItalic';
+	padding: 20px 0;
+	text-transform: uppercase;
+}
+.item-description {
+	font-size: 18px;
+	font-family: 'OpenSans-LightItalic';
+}
+.item-picture {
+	width: 50px;
+}
+
+@media screen and (max-width: 1024px) {
+	.page-main__infomation{
+    	padding: 50px 0;
+	}
+	.infomation-title,
+	.our-advantages__title {
+		font-size: 30px;
+	}
+	.infomation-description {
+		width: 500px;
+    	padding: 50px 0;
+    	font-size: 20px;
+    }
+    .product-description {
+	    padding: 50px 0;
+	    font-size: 20px;
+	    width: 500px;
+	}
+	.product-description__picture {
+		width: 500px;
+		margin: auto;
+	}
+	.our-advantages__list {
+		padding: 50px 0;
+	}
+	.our-advantages__list-item {
+		width: 100%;
+	}
+	.item-description {
+		width: 80%;
+    	margin: auto;
+	}
+}
+@media screen and (max-width: 414px) {
+	.infomation-title,
+	.our-advantages__title {
+		font-size: 20px;
+	}
+	.infomation-description,
+	.product-description {
+   		width: 300px;
+    	padding: 30px 0;
+    	font-size: 12px;
+    }
+	.product-description__picture {
+		width: 300px;
+		margin: auto;
+	}
+	.item-description {
+		font-size: 12px;
+	}
+}
+@media screen and (max-width: 320px) {
+	.infomation-description,
+	.product-description {
+   		width: 250px;
+    	padding: 20px 0;
+    	font-size: 12px;
+    }
+	.product-description__picture {
+		width: 300px;
+		margin: auto;
+	}
+}
+

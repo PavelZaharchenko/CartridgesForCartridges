@@ -1,0 +1,54 @@
+.page-header {
+	background-color: @colorGrey;
+	border-bottom: 1px solid @colorBlack;
+	border-top: 1px solid @colorBlack;
+	.container {
+		line-height: 50px;
+		.fixy ();
+	}
+}
+.page-header__title {
+	font-family: 'OpenSans-BoldItalic';
+	font-size: 18px;
+	text-transform: uppercase;
+	color: @colorWhite;
+	span {
+		text-transform: none;
+		color: @colorBlack;
+	}
+}
+.page-geader__phone {
+	font-family: 'OpenSans-BoldItalic';
+	font-size: 18px;
+	text-decoration: none;
+	color: @colorWhite;
+	&:hover {
+    	color: @colorBlack;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+	.page-header {
+		padding: 0 30px;
+	}
+}
+@media screen and (max-width: 414px) {
+	.page-header{
+		.container {
+			line-height: 35px;
+			flex-direction: column;
+    		text-align: center;
+    	}
+	}
+}
+@media screen and (max-width: 320px) {
+	.page-header{
+		.container {
+			line-height: 25px;
+		}
+	}
+	.page-header__title,
+	.page-geader__phone {
+		font-size: 12px;
+	}
+}
